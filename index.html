@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Sketchpad</title>
+
+    <!-- Bootstrap -->
+    <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./node_modules/bootstrap/dist/css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <div class="container" id="drawman">
+        <div class="row">
+            <div class="col-md-4 left">
+                <div class="sidebar">
+                    <div class="colors">
+                        <div data-color="#008080" class="active"></div>
+                        <div data-color="#ff0000"></div>
+                        <div data-color="#ffd700"></div>
+                        <div data-color="#ffe4e1"></div>
+                        <div data-color="#b0e0e6"></div>
+
+                        <div data-color="#eeeeee"></div>
+                        <div data-color="#ffa500"></div>
+                        <div data-color="#003366"></div>
+                        <div data-color="#fa8072"></div>
+                        <div data-color="#ffff00"></div>
+
+                        <div data-color="#cbbeb5"></div>
+                        <div data-color="#f5f5dc"></div>
+                        <div data-color="#c39797"></div>
+                        <div data-color="#008000"></div>
+                        <div data-color="#b4eeb4"></div>
+
+                        <div data-color="#66cccc"></div>
+                        <div data-color="#c0d6e4"></div>
+                        <div data-color="#ccff00"></div>
+                        <div data-color="#b6fcd5"></div>
+                        <div data-color="#0e2f44"></div>
+
+                        <div data-color="#0099cc"></div>
+                        <div data-color="#404040"></div>
+                        <div data-color="#6dc066"></div>
+                        <div data-color="#794044"></div>
+                        <div data-color="#f5f5dc"></div>
+
+                        <div data-color="#990000"></div>
+                        <div data-color="#b0e0e6"></div>
+                        <div data-color="#ffa500"></div>
+                        <div data-color="#02F022"></div>
+                        <div data-color="#5D02F0"></div>
+                        <div data-color="#c39797"></div>
+                        <div data-color="#008000"></div>
+                        <div data-color="#b4eeb4"></div>
+                    </div>
+                    <div class="tools">
+                        <output><h5>Pen size: <span>5</span></h5></output>
+                        <input type="range" min="1" max="30" step="1" value="5">
+
+                        <button class="btn btn-danger" type="button" id="clear">Clear</button>
+                        <button class="btn btn-info" type="button" id="save">Save</button>
+                    </div>
+                    <div class="preview">
+                        <h5>Saved preview</h5>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+            <div class="col-md-8">
+                <div class="myCanvas">
+                    <canvas id="canvas"></canvas>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./main.js"></script>
+
+    </script>
+  </body>
+</html>
