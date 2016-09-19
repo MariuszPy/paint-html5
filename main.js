@@ -85,27 +85,37 @@
 
         },
 
+        removeImages: function(){
+            this.images = this.body.querySelectorAll('img');
+            for (var i = 0; i < this.images.length; i++) {
+                this.images[i].remove();
+            }
+        },
+
         setupButtons: function(){
 
             this.clearBtn.onclick = function(){
                 this.ctx.clearRect(0,0, this.canvas.width, this.canvas.height);
+                //this.removeImages();
             }.bind(this);
 
             this.saveBtn.onclick = function(){
                 var img = new Image();
+                img.classList.add("copy-img");
                 img.src = this.canvas.toDataURL("image/png");
-                this.drawman.appendChild(img);
+                this.body.appendChild(img);
             }.bind(this);
         },
 
         init: function(){
 
             this.drawman = document.querySelector('#drawman');
+            this.body = document.querySelector('body');
             this.canvasContainer = this.drawman.querySelector('.myCanvas');
             this.canvas = this.canvasContainer.querySelector('canvas');
             this.colors = this.drawman.querySelectorAll('.colors div');
             this.range = this.drawman.querySelector("input[type='range']");
-            this.rangeOutput = this.drawman.querySelector('output h5 span');
+            this.rangeOutput = this.drawman.querySelector('.g-number');
             this.clearBtn = this.drawman.querySelector('#clear');
             this.saveBtn = this.drawman.querySelector('#save');
 

@@ -20,10 +20,14 @@
   </head>
   <body>
 
+          <!-- <h1>painter</h1> -->
+
     <div class="container" id="drawman">
+
         <div class="row">
-            <div class="col-md-4 left">
+            <div class="col-md-2 left">
                 <div class="sidebar">
+<h1>painter</h1>
                     <div class="colors">
                         <div data-color="#008080" class="active"></div>
                         <div data-color="#ff0000"></div>
@@ -63,24 +67,29 @@
                         <div data-color="#c39797"></div>
                         <div data-color="#008000"></div>
                         <div data-color="#b4eeb4"></div>
+                        <div data-color="#eeeeee"></div>
+                        <div data-color="#ffa500"></div>
                     </div>
                     <div class="tools">
-                        <output><h5>Pen size: <span>5</span></h5></output>
-                        <input type="range" min="1" max="30" step="1" value="5">
+                        <output>
+                            <span class="glyphicon glyphicon-pencil"></span>
+                            <span class="g-number">15</span>
+                        </output>
+                        <input type="range" min="1" max="30" step="1" value="15">
 
                         <button class="btn btn-danger" type="button" id="clear">Clear</button>
                         <button class="btn btn-info" type="button" id="save">Save</button>
                     </div>
-                    <div class="preview">
+                    <!-- <div class="preview">
                         <h5>Saved preview</h5>
-                    </div>
+                    </div> -->
                 </div>
 
 
 
 
             </div>
-            <div class="col-md-8">
+            <div class="col-md-10 right">
                 <div class="myCanvas">
                     <canvas id="canvas"></canvas>
                 </div>
