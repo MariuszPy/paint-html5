@@ -103,7 +103,7 @@
                 var img = new Image();
                 img.classList.add("copy-img");
                 img.src = this.canvas.toDataURL("image/png");
-                this.body.appendChild(img);
+                this.rowImg.appendChild(img);
             }.bind(this);
         },
 
@@ -114,6 +114,7 @@
             this.canvasContainer = this.drawman.querySelector('.myCanvas');
             this.canvas = this.canvasContainer.querySelector('canvas');
             this.colors = this.drawman.querySelectorAll('.colors div');
+            this.rowImg = this.drawman.querySelector('#rowImg');
             this.range = this.drawman.querySelector("input[type='range']");
             this.rangeOutput = this.drawman.querySelector('.g-number');
             this.clearBtn = this.drawman.querySelector('#clear');
